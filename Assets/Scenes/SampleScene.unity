@@ -443,6 +443,7 @@ GameObject:
   - component: {fileID: 377717127}
   - component: {fileID: 377717126}
   - component: {fileID: 377717125}
+  - component: {fileID: 377717129}
   m_Layer: 0
   m_Name: AIPaddle
   m_TagString: AIPaddle
@@ -593,6 +594,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377717129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377717124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5128d021683a8f54a81d80a834f9f618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
+  maxSpeedAI: 20
+  struggleSpeedThreshold: 15
+  strugglePenalty: 0.5
+  moveThreshold: 0.05
+  minY: -8.5
+  maxY: 8.5
+  aimRandomness: 0.5
+  aimUpdateInterval: 0.5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +1119,7 @@ GameObject:
   - component: {fileID: 1399361953}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1250,7 +1272,7 @@ MonoBehaviour:
   initialSpeed: 8
   maxBounceAngle: 75
   speedIncreasePerHit: 0.25
-  maxSpeed: 20
+  maxSpeed: 30
 --- !u!1 &1631256435
 GameObject:
   m_ObjectHideFlags: 0

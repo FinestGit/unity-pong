@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerPaddle
   - AIPaddle
+  - Ball
   layers:
   - Default
   - TransparentFX
